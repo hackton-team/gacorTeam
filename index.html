@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-SPENDING</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <form action="">
+          <h1>Input pengeluaran harian</h1>
+          <div class="input-box">
+            <label for="barang">Masukan barang :</label>
+            <input
+              type="text"
+              placeholder="Masukan nama barang"
+              id="barang"
+              required
+            />
+            <!-- <i></i> -->
+          </div>
+
+          <div class="input-box">
+            <label for="harga">Masukan harga :</label>
+            <input
+              type="number"
+              id="harga"
+              min="1000"
+              max="200000"
+              placeholder="harga barang"
+              required
+            />
+            <!-- <i class="ri-admin-line" class="icon"></i> -->
+          </div>
+          <div class="input-box">
+            <label for="jumlah">Jumlah barang :</label>
+            <input
+              type="number"
+              id="jumlah"
+              min="1"
+              max="5"
+              placeholder="harga barang"
+              required
+            />
+            <!-- <i class="ri-admin-line" class="icon"></i> -->
+          </div>
+          <div class="input-box">
+            <label for="date">Masukan tanggal :</label>
+            <input type="date" required />
+            <i data-feather="dollar-sign"></i>
+          </div>
+
+          <button type="submit" class="btn">Tambahkan data</button>
+        </form>
+      </div>
+      <!-- end form wrapper -->
+
+      <div class="table-data">
+        <table>
+          <tr>
+            <th>No.</th>
+            <th>Total</th>
+            <th>Pengeluaran</th>
+            <th>Tanggal</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td colspan="4" class="empty">Data no matches</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- end container -->
+
+    <!-- Index js -->
+    <script src="index.js"></script>
+  </body>
+</html>
