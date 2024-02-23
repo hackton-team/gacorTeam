@@ -33,8 +33,6 @@
             <input
               type="number"
               id="harga"
-              min="1000"
-              max="200000"
               placeholder="harga barang"
               required
             />
@@ -45,8 +43,6 @@
             <input
               type="number"
               id="jumlah"
-              min="1"
-              max="5"
               placeholder="harga barang"
               required
             />
@@ -54,33 +50,22 @@
           </div>
           <div class="input-box">
             <label for="date">Masukan tanggal :</label>
-            <input type="date" required />
+            <input type="date" id="tanggal" required />
             <i data-feather="dollar-sign"></i>
           </div>
 
-          <button type="submit" class="btn">Tambahkan data</button>
+          <button type="submit" onclick="addData()" id="buttonAdd" class="btn">Tambahkan data</button>
         </form>
       </div>
       <!-- end form wrapper -->
 
       <div class="table-data">
-        <table>
-          <tr>
-            <th>No.</th>
-            <th>Total</th>
-            <th>Pengeluaran</th>
-            <th>Tanggal</th>
-            <th>Action</th>
-          </tr>
-          <tr>
-            <td colspan="4" class="empty">Data no matches</td>
-          </tr>
-        </table>
+        
       </div>
     </div>
     <!-- end container -->
 
     <!-- Index js -->
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
